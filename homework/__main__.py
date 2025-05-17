@@ -1,10 +1,10 @@
 
-from homework.src._internals.CountWordsMixin import CountWordsMixin
+from homework.src._internals.count_words import CountWordsMixin
 from homework.src._internals.ParseArgsMixin import ParseArgsMixin
-from homework.src._internals.PreprocessLinesMixin import PreprocessLinesMixin
-from homework.src._internals.ReadAllLinesMixin import ReadAllLinesMixin
-from homework.src._internals.SplitIntoWordsMixin import SplitIntoWordsMixin
-from homework.src._internals.WriteWordCountsMixin import WriteWordCountsMixin
+from homework.src._internals.preprocess_lines import PreprocessLinesMixin
+from homework.src._internals.read_all_lines import ReadAllLinesMixin
+from homework.src._internals.split_into_words import SplitIntoWordsMixin
+from homework.src._internals.write_word_counts import WriteWordCountsMixin
 
 
 class WordCountApp(

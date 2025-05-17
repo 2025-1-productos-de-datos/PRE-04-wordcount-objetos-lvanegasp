@@ -12,19 +12,18 @@ def test_homework():
     for path in [
         "homework/src",
         "homework/src/_internals",
-        "homework/src/_internals/CountWordsMixin.py",
-        "homework/src/_internals/ParseArgsMixin.py",
-        "homework/src/_internals/PreprocessLinesMixin.py",
-        "homework/src/_internals/ReadAllLinesMixin.py",
-        "homework/src/_internals/SplitIntoWordsMixin.py",
-        "homework/src/_internals/WriteWordCountsMixin.py",
+        "homework/src/_internals/count_words.py",
+        "homework/src/_internals/preprocess_lines.py",
+        "homework/src/_internals/read_all_lines.py",
+        "homework/src/_internals/split_into_words.py",
+        "homework/src/_internals/write_word_counts.py",
     ]:
         if not os.path.exists(path):
             raise Exception(f"'{path}' directory does not exist")
     try:
         subprocess.run(
             ["python3", "-m", "homework", "data/input", "data/output"],
-            check=True,
+            check=True, 
         )
     except subprocess.CalledProcessError as e:
         raise Exception(f"Error running the homework script: {e}")
